@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+//import "google/protobuf/timestamp.proto";
+
+// [START messages]
+message Comando {
+    string nome = 1;
+    optional bool estado = 2;
+    optional float volume = 3;
+}
+// Our address book file is just one of these.
+// [END messages]

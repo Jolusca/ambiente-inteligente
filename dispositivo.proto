@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+//import "google/protobuf/timestamp.proto";
+
+// [START messages]
+message Aparelho {
+  string name = 1;
+  string on = 2;
+  optional string volume = 3;
+  //google.protobuf.Timestamp last_updated = 5;
+}
+
+// Our address book file is just one of these.
+message AparelhosBook {
+    Aparelho aparelhos = 1;
+  }
+// [END messages]
